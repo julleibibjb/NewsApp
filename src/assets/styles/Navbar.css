@@ -1,0 +1,150 @@
+.navbar {
+  margin: 0 auto;
+  width: 95%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+}
+
+.logo {
+}
+
+.logo h1 {
+  margin: 0;
+}
+
+.routes {
+}
+
+.accounts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+}
+.nav li {
+  list-style: none;
+  padding: 0 1em;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+}
+
+.search {
+  margin: 0 1em;
+  cursor: pointer;
+}
+
+.join {
+  border: #175ec9 solid 1px;
+  background: none;
+  font-size: 1.1rem;
+  font-family: "Times New Roman", Times, serif;
+  padding: 0.3rem 0.5rem;
+  border-radius: 3px;
+  background-color: #175ec9;
+  color: white;
+}
+
+.bars {
+  font-size: 2rem;
+  margin: 0 1em;
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+}
+
+.mobilenav {
+  background-color: white;
+
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 95%;
+  /* padding: 1em 0 0 2em; */
+  bottom: 0;
+  display: none;
+}
+
+.mobileroutes {
+  /* border: solid black; */
+  height: 90%;
+}
+
+.mobileroutes ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mobileroutes li {
+  list-style: none;
+  margin: 2em 0;
+}
+
+.mobileroutes ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+}
+
+.mobilelogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.mobilelogo h1 {
+  margin: 0;
+}
+
+.mobilesearch {
+  margin: 0 4em 0 0;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  margin: 0.5em 0;
+}
+
+.searchbar input {
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: "Times New Roman", Times, serif;
+  height: 50px;
+  height: 0;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+}
+
+.searchbar svg {
+}
+
+@media only screen and (max-width: 900px) {
+  .nav {
+    background-color: lightblue;
+  }
+  .routes {
+    display: none;
+  }
+  .bars {
+    display: block;
+  }
+}
