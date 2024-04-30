@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap");
 .navbar {
   margin: 0 auto;
   width: 95%;
@@ -7,17 +8,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 0;
+  padding: 0.7em 0 0 0;
 }
 
 .logo {
+  cursor: pointer;
 }
 
 .logo h1 {
   margin: 0;
+  /* font-family: "Dancing Script", cursive; */
+  font-size: 2rem;
+  color: #175ec9;
 }
 
+.spacing {
+  padding: 0 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .routes {
+  transition: 1s;
 }
 
 .accounts {
@@ -26,26 +38,48 @@
   align-items: center;
 }
 
-.nav ul {
+.secondNav {
+  margin: 0 auto;
+  width: 100%;
+  border: solid black;
+  background-color: black;
+  transition: 0.7s ease;
+  /* height: 54px; */
+}
+
+.secondNav ul {
   display: flex;
 
   margin: 0;
   padding: 0;
 }
-.nav li {
+.secondNav li {
   list-style: none;
-  padding: 0 1em;
+  padding: 1em 1em 1em 0;
 }
 
-.nav ul li a {
+.secondNav ul li a {
   text-decoration: none;
   color: black;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  color: white;
+  transition: 0.8s;
+  padding: 0.9em 0.3em;
+}
+
+.socials img {
+  width: 30px;
+  height: 30px;
+  margin: 0 0.2em;
 }
 
 .search {
   margin: 0 1em;
   cursor: pointer;
+}
+
+.active {
+  color: red;
 }
 
 .join {
@@ -57,6 +91,8 @@
   border-radius: 3px;
   background-color: #175ec9;
   color: white;
+  margin: 0 0.5em;
+  cursor: pointer;
 }
 
 .bars {
@@ -69,19 +105,20 @@
 
 .mobilenav {
   background-color: white;
-
   position: fixed;
   top: 0;
-  z-index: 100;
-  width: 95%;
-  /* padding: 1em 0 0 2em; */
+  left: 0;
+  right: 0;
   bottom: 0;
+  z-index: 100;
   display: none;
+  border: solid black;
 }
 
 .mobileroutes {
   /* border: solid black; */
   height: 90%;
+  margin-top: 2em;
 }
 
 .mobileroutes ul {
@@ -93,13 +130,14 @@
 }
 .mobileroutes li {
   list-style: none;
-  margin: 2em 0;
+  margin: 1em 0;
 }
 
 .mobileroutes ul li a {
   text-decoration: none;
   color: black;
   font-size: 1.3rem;
+  color: black;
 }
 
 .mobilelogo {
@@ -114,7 +152,16 @@
 }
 
 .mobilesearch {
-  margin: 0 4em 0 0;
+  margin: 0 6em 0 0;
+}
+
+.searchform {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
 }
 
 .searchbar {
@@ -124,27 +171,194 @@
 }
 
 .searchbar input {
-  width: 100%;
+  width: 98%;
   font-size: 1.2rem;
   font-family: "Times New Roman", Times, serif;
-  height: 50px;
-  height: 0;
+  height: 40px;
   border: none;
   outline: none;
   transition: 0.5s;
+  border: solid black;
+  border-radius: 5px;
 }
 
-.searchbar svg {
+.show {
+  color: white;
+  display: none;
 }
 
-@media only screen and (max-width: 900px) {
-  .nav {
-    background-color: lightblue;
+.isactive {
+  background-color: red;
+}
+
+.isActive {
+  background-color: red;
+  color: white;
+}
+
+.routes a {
+  color: blue;
+}
+
+/* ACCOUNT DETAILS */
+
+.useraccount {
+  position: relative;
+}
+
+.Account {
+  position: absolute;
+  z-index: 10;
+  border: solid black;
+  padding: 1em;
+  right: 0;
+  background-color: white;
+  top: 3em;
+  width: 200px;
+  border-radius: 10px;
+  display: none;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.email {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoutbutton {
+  margin: 1em 0 0 0;
+  cursor: pointer;
+}
+
+.logoutbutton button {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 0.3em 0.3em;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  text-align: left;
+  background: none;
+}
+
+.logoutbutton svg {
+  margin: 0em 1em 0em 0em;
+}
+
+.logoutbutton button:hover {
+  background-color: #cfcfcf;
+}
+
+.notificationsbell {
+  position: relative;
+}
+
+.Notificationcard {
+  position: absolute;
+  z-index: 10;
+  border: solid black;
+  padding: 1em;
+  right: 0;
+  background-color: white;
+  top: 3em;
+  width: 300px;
+  border-radius: 10px;
+  display: none;
+}
+
+.notCard {
+  margin: 1em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notCard p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.notCard img {
+  width: 50px;
+  height: 50px;
+  margin-right: 1em;
+}
+
+.options {
+  display: none;
+  margin: 1em 0;
+}
+
+.options .buttonA {
+  border: #175ec9 solid 1px;
+  font-size: 1.1rem;
+  font-family: "Times New Roman", Times, serif;
+  padding: 0.3rem 0.5rem;
+  border-radius: 3px;
+  background-color: #175ec9;
+  color: white;
+  margin: 0 0.5em;
+  cursor: pointer;
+}
+
+.options .buttonB {
+  border: white solid 1px;
+  font-size: 1.1rem;
+  font-family: "Times New Roman", Times, serif;
+  padding: 0.3rem 0.5rem;
+  border-radius: 3px;
+  background-color: white;
+  color: black;
+  margin: 0 0.5em;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1000px) {
+  .secondNav {
+    height: 0;
+    overflow: hidden;
   }
+
   .routes {
-    display: none;
+    display: block;
+    order: 1;
+    margin: 2em 0;
+  }
+  .secondNav ul {
+    flex-direction: column;
+  }
+  .spacing {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .socials {
+    order: 2;
   }
   .bars {
     display: block;
+  }
+  .show {
+    display: inline;
+  }
+  .isactive {
+    background: none;
+  }
+  .options {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Notificationcard {
+    right: -6em;
+    width: 300px;
   }
 }

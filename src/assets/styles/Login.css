@@ -1,0 +1,97 @@
+.Login {
+  margin: 0 auto;
+  width: 95%;
+}
+.loginContainer {
+  margin: 5em 0;
+  padding: 1em;
+}
+
+.card {
+  text-align: center;
+  margin: 0 auto;
+  width: 30%;
+  position: relative;
+  padding: 1em 0;
+}
+.loginput {
+  height: 30px;
+  width: 90%;
+  font-size: 1.1rem;
+  font-family: "Times New Roman", Times, serif;
+  border: solid black 1px;
+  border-radius: 3px;
+}
+
+.loginbutton {
+  width: 90%;
+  margin: 1em 0;
+  font-size: 1.2rem;
+  padding: 0.3em 0.5em;
+  background: #1f60f0;
+  color: #eee;
+  border: solid 1px #1f60f0;
+}
+
+.answer {
+  position: absolute;
+  margin: 0em 0em 2em 0;
+  /* border: solid black 1px; */
+  height: 30px;
+  width: 90%;
+  top: -3em;
+  padding: 0.5em 0;
+  left: 5%;
+}
+.answer h3 {
+  margin: 0;
+  font-size: 2rem;
+}
+.answer p {
+  margin: 0;
+  color: red;
+}
+
+.in {
+  margin: 0em 0em 2em 0;
+}
+
+.forgot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.forgot p {
+  font-size: 0.9rem;
+  color: #1f60f0;
+}
+
+.sighn p {
+  font-size: 0.9rem;
+}
+.sighn span {
+  color: #1f60f0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    width: 80%;
+  }
+  .loginContainer {
+    margin: 7em 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    width: 100%;
+  }
+}
